@@ -2,7 +2,6 @@ import { Inter } from 'next/font/google';
 import NavBar from '@/components/navbar';
 const inter = Inter({ variable: '--inter-font', subsets: ['latin'] });
 import styles from '@/styles/About.module.css';
-import Image from 'next/image';
 import Footer from '@/components/footer';
 import ContactInfo from '@/components/contactInfo';
 export default function Contact(){

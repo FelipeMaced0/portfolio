@@ -18,7 +18,7 @@ export default function Project(props: any) {
                         </div>
                     </div>
                 </div>
-                <div style={{display:"flex", flexDirection:"row", justifyContent:"end"}}><Image width={25} height={25} alt="colorized-github-logo" src="/../public/github.png" /></div>
+                <div style={{display:"flex", flexDirection:"row", justifyContent:"end"}}><Image width={25} height={25} alt="colorized-github-logo" src="/github.png" /></div>
             </div>
         </a>
     );
