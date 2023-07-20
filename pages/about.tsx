@@ -13,7 +13,7 @@ export default function About(){
                 <h2>Well, here we go...</h2>
                 <div style={{textAlign:"justify"}}>
                     Ok, i am a brazilliam programmer capable of resolving your problems. I am always looking for challenges, try me if you dare.
-                    I have experience with PHP, Laravel, MySQL, Python. More recently i've be using PHP to re-build an ERP.
+                    I have experience with PHP, Laravel, MySQL, Python. More recently i&apos;ve be using PHP to re-build an ERP.
                     About 2 years of professional programming on local industry, in this timespan, databases, scraping, websites and other software challenges were in my daily routine.
                 </div>
             </section>
