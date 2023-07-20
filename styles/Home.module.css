@@ -1,21 +1,38 @@
-.main {
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  justify-content: space-between;
+  max-height: 100vh;
+  font-family: var(--inter-font);
+}
+
+.section {
+  margin-top: 40px;
+  width: 600px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .projects {
   display: flex;
+  width: inherit;
+  height: inherit;
+  overflow: scroll;
   flex-direction: column;
-  justify-content: space-around;
-  height: 50vh;
+  gap: 4px;
+  align-items: center;
+  background-color: #2A2A2A;
 }
 
 .projectname {
   display: flex;
+  flex-direction: column;
   justify-content: start;
-  font-size: 1.2cap;
+  gap: 2px;
+  font-size: 1.7cap;
   font-weight: bold;
 }
 
@@ -24,26 +41,64 @@
 }
 
 .header {
+  position: sticky;
+  top: 0;
   width: 100vw;
-  background-color: blue;
+  background-color: #2A2A2A;
 }
 
 .navbar {
   display: flex;
   flex-direction: row;
-  height: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  height: 4em;
+
 }
 
 .card {
   display: flex;
   flex-direction: column;
+  gap: 2px;
   overflow: hidden;
   padding: 1rem 1.2rem;
+  margin: 0.5rem 1.2rem;
   border-radius: 15px;
-  background: rgb(244, 0, 0);
-  width: 20rem;
+  background: #4D4E4E;
+  color: #9C9BC8;
+  width: 400px;
+  transition: transform .5s ease-in-out;
 }
 
 .card p {
   overflow: wrap;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background-color: #252525;
+}
+
+.sectionHeader {
+  background: #1B1B1B;
+  padding: 3% 3% 3% 9%;
+}
+
+.info {
+  display: flex; 
+  flex-direction: row;
+  gap: 20px
+}
+
+@media screen and (max-width: 1232px){
+  .info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .content {
+    overflow: scroll;
+  }
 }

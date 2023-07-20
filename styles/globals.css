@@ -7,7 +7,11 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  max-height: 100vw;
+  overflow: hidden;
+  background-color: #121212;
+  color: #ccc;
+  font-size: 1rem;
 }
 
 a {

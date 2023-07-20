@@ -1,4 +1,5 @@
 import { Octokit } from "octokit";
+
 const octokit = new Octokit({ auth: process.env.AUTH_GITHUB_TOKEN });
 
 export async function getRepos() {

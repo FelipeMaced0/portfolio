@@ -1,0 +1,24 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 100vh;
+    font-family: var(--inter-font);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.aboutSection {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: 30vh;
+    gap: 5vh;
+}
