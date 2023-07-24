@@ -19,6 +19,21 @@ export default function Home({ repos, stargazers, workExperience }: { repos: { d
         <NavBar />
         <div className={styles.info}>
           <section className={styles.section}>
+            <span className={styles.sectionHeader}><h2>Work Experience</h2></span>
+            <article className={styles.projects}>
+              {
+                workExperience?.experience.map((exp: any) => (
+                  <WorkExperience
+                    key={exp.title}
+                    companyName={exp.companyName}
+                    period={{ start: exp.timePeriod.startDate, end: exp.timePeriod.endDate }}
+                    url={"#"}
+                  />
+                ))
+              }
+            </article>
+          </section>
+          <section className={styles.section}>
             <span className={styles.sectionHeader}><h2>Projects</h2></span>
             <article className={styles.projects}>
               {
@@ -33,21 +48,6 @@ export default function Home({ repos, stargazers, workExperience }: { repos: { d
                     language={repo.language}
                     description={repo.description}
                     url={repo.svn_url}
-                  />
-                ))
-              }
-            </article>
-          </section>
-          <section className={styles.section}>
-            <span className={styles.sectionHeader}><h2>Work Experience</h2></span>
-            <article className={styles.projects}>
-              {
-                workExperience?.experience.map((exp: any) => (
-                  <WorkExperience
-                    key={exp.title}
-                    companyName={exp.companyName}
-                    period={{ start: exp.timePeriod.startDate, end: exp.timePeriod.endDate }}
-                    url={"#"}
                   />
                 ))
               }
