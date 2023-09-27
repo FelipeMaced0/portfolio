@@ -1,7 +1,6 @@
 import { Inter } from 'next/font/google';
 import NavBar from '@/components/navbar';
 const inter = Inter({ variable: '--inter-font', subsets: ['latin'] });
-import styles from '@/styles/About.module.css';
 import Footer from '@/components/footer';
 
 export default function About(){
@@ -9,7 +8,7 @@ export default function About(){
         <div className="flex flex-col items-center justify-between h-screen max-h-full">
         <NavBar/>
         <div className="h-full flex flex-col items-center justify-around">
-            <section className={styles.aboutSection}>
+            <section className="flex flex-col justify-center w-80 h-96 gap-y-4">
                 <h2>Well, here we go...</h2>
                 <div className='text-justify'>
                     Ok, i am a brazilliam programmer capable of resolving your problems. I am always looking for challenges, try me if you dare.

@@ -1,11 +1,8 @@
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import React from 'react';
-import styles from '@/styles/Home.module.css'
 import Project from '@/components/project';
 import WorkExperience from '@/components/workexperience';
 import { getRepos, getStarGazers } from '@/services/githubInfo';
-import { getWorkExperience } from '@/services/linkedinInfo';
 import NavBar from '@/components/navbar';
 const inter = Inter({ variable: '--inter-font', subsets: ['latin'] });
 
