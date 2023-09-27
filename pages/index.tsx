@@ -14,13 +14,13 @@ export default function Home({ repos, stargazers, workExperience }: { repos: { d
   const mapstargazers: Map<any, any> = new Map(stargazers);
 
   return (
-    <main className={inter.variable}>
-      <div className={styles.content}>
+    <main className="h-screen">
+      <div className="flex flex-col items-center gap-y-52 h-full min-h-screen">
         <NavBar />
-        <div className={styles.info}>
-          <section className={styles.section}>
-            <span className={styles.sectionHeader}><h2>Work Experience</h2></span>
-            <article className={styles.projects}>
+        <div className="flex flex-col min-[925px]:flex-row gap-x-5 overflow-y-scroll min-[925px]:overflow-y-auto">
+          <section className="w-[450px] h-[500px] mt-[40px] flex flex-col">
+            <span className="p-5 bg-[#1B1B1B]"><h2>Work Experience</h2></span>
+            <article className="w-full h-full flex flex-col items-center overflow-y-scroll border-l border-r border-b border-[#1B1B1B]">
               {
                 workExperience?.experience.map((exp: any) => (
                   <WorkExperience
@@ -33,9 +33,9 @@ export default function Home({ repos, stargazers, workExperience }: { repos: { d
               }
             </article>
           </section>
-          <section className={styles.section}>
-            <span className={styles.sectionHeader}><h2>Projects</h2></span>
-            <article className={styles.projects}>
+          <section className="w-[450px] h-[500px] mt-[40px] flex flex-col">
+            <span className="p-5 bg-[#1B1B1B]"><h2>Projects</h2></span>
+            <article className="w-full h-full flex flex-col items-center overflow-y-scroll border-l border-r border-b border-[#1B1B1B]">
               {
                 repos?.data.filter((repo: any) => {
                   return mapstargazers?.get(repo.name)?.some((stargazer: any) => {
