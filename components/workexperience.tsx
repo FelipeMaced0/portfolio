@@ -11,9 +11,9 @@ export default function WorkExperience(props: work) {
 
     return (
         <a href={props.url}>
-            <div className="flex flex-col gap-3 w-[400px] bg-[#4D4E4E] text-[#9C9BC8] p-2 m-2 rounded transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+            <div className="w-[330px] min-[925px]:w-[370px] flex flex-col gap-3 bg-[#4D4E4E] text-[#9C9BC8] p-2 m-2 rounded transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300">
 
-                <div className="text-xl font-bold text-white">
+                <div className="capitalize font-bold text-white">
                     <span>{props.companyName}</span>
                 </div>
                 <div className='flex gap-3'>
